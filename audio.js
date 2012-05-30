@@ -1,3 +1,7 @@
+// meow sound from
+// http://www.freesound.org/people/Corsica_S/sounds/33657/
+// (CC BY 3.0)
+
 function init_audio() {
   var table = {
     122: 1,
