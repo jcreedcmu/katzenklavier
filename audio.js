@@ -15,7 +15,6 @@ function init_audio() {
     44: 13,
   };
   $(document).keypress(function(e) {
-    console.log(e.keyCode);
     var n = table[e.keyCode];
     if (n) playNote(n);
   });
@@ -24,7 +23,7 @@ function init_audio() {
 function playNote(n) {
   player = new Audio("meow" + n + ".wav");
   player.play();
-  player.addEventListener('canplaythrough', function(e) { console.log(player.networkState); player.play(); });
+  player.addEventListener('canplaythrough', function(e) { player.play(); });
 }
 
 init_audio();
